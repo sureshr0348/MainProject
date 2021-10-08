@@ -1,9 +1,10 @@
 package com.defects.tests;
 
 
-import java.util.Hashtable;
+import java.util.Scanner;
 
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,49 +13,45 @@ import com.defects.utils.TestDataProvider;
 
 public class LoginTest extends BaseUI{
 	
-	//@Test(dataProvider = "getTestOneData")
-	public void testOne(Hashtable<String, String> dataTable) {
-		
-		logger = report.createTest("LoginTest");
+	@BeforeSuite
+	public void setup() {
 		invokeBrowser();
-		openURL("websiteURL");
-		elementClick("signinPageBtn_xpath");
-		enterText("userNameTextbox_xpath", dataTable.get("UserName"));
-		enterText("passwordTextbox_xpath", dataTable.get("Password"));
-		elementClick("signinBtn_xpath");
-		takeScreenshot();
+		implicitWait(30);
+		openURL("baseURL");
+	}
+	
+	@AfterSuite
+	public void teardown() {
 		quitBrowser();
 	}
 	
-	@Test
-	public void checkDropdown() {
-		logger = report.createTest("Dropdown Test");
-		invokeBrowser();
-		openURL("dropDownURL");
-		selectDropdown("dropDown_xpath", "Angola");
-	}
-	
-	@Test
-	public void checkCheckBox() {
-		logger = report.createTest("CheckBox Test");
-		invokeBrowser();
-		openURL("checkBoxURL");
-		elementClick("checkBox1_xpath");
-	}
-	
-	public void checkDragDrop() {
+	@Test														//(dataProvider = "getTestOneData")
+	public void Login() throws InterruptedException {			//(Hashtable<String, String> dataTable) {
+		Scanner sc = new Scanner(System.in);
+		logger = report.createTest("LoginTest");
 		
+		enterText("emailBox", prop.getProperty("email"));
+		elementClick("nextButton");
+		Thread.sleep(3000);
+		enterText("passwordBox", prop.getProperty("pass"));
+		elementClick("signInButton");
+		
+		System.out.println("Enter the OTP:");
+		String otp=sc.next();
+		
+		enterText("otpBox", otp);
+		elementClick("verifyButton");
+		Thread.sleep(2000);
+		elementClick("verifyButton");
+		
+		Thread.sleep(10000);
+		takeScreenshot();
+		sc.close();
 	}
-	
-	
-	@AfterTest
-	public void endReport() {
-		report.flush();
-	}
-	
+
+		
 	@DataProvider
 	public Object[][] getTestOneData(){
-		
 		return TestDataProvider.getTestData("TestData_TestManagement", "SampleData", "Test One");
 	}
 

@@ -47,7 +47,7 @@ public class BaseUI {
 
 				try {
 					FileInputStream file = new FileInputStream(System.getProperty("user.dir")
-							+ "\\src\\test\\resources\\objectRepository\\projectConfig.properties");
+							+ "\\src\\test\\resources\\objectRepository\\Config.properties");
 					prop.load(file);
 				} catch (FileNotFoundException e) {
 					reportFail(e.getMessage());
@@ -62,10 +62,13 @@ public class BaseUI {
 		}
 	}
 
-	// Invoke the browser
+	/*
+	 *  Invoke the browser - Setup the driver and open browser window and maximise it.
+	 *  Page Load Timeout set to 60s.
+	 */
 	public void invokeBrowser() {
 
-		String browserName = prop.getProperty("browserName");
+		String browserName = prop.getProperty("browserChoice");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
@@ -87,10 +90,12 @@ public class BaseUI {
 		}
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
-	// open the URL
+	/*
+	 *  open the website URL of provided
+	 */
 	public void openURL(String websiteURLKey) {
 		try {
 			String websiteURL = prop.getProperty(websiteURLKey);
@@ -102,19 +107,30 @@ public class BaseUI {
 		}
 	}
 
-	// Close the browser instance
+	
+	/*
+	 *  Close the browser window 
+	 */
 	public void tearDown() {
 		driver.close();
 		logger.log(Status.INFO, "Closed the browser");
 	}
 
-	// Quit the browser instance
+	
+	/*
+	 *  Close all browser windows
+	 */
 	public void quitBrowser() {
 		driver.quit();
 		logger.log(Status.INFO, "quits the driver");
 	}
 
-	// Enter text in text fields
+	
+	/*
+	 *  Enter text in Input fields
+	 *  Key of the element locator from the .properties file and the test data 
+	 *  	to be entered is passed as parameters
+	 */
 	public void enterText(String webElementKey, String data) {
 		try {
 			getElement(webElementKey).sendKeys(data);
@@ -125,7 +141,11 @@ public class BaseUI {
 
 	}
 
-	// to click the element
+	
+	/*
+	 *  To click on a element
+	 *  Key of the element locator from the .properties file is passed as parameter.
+	 */
 	public void elementClick(String webElementKey) {
 		try {
 			getElement(webElementKey).click();
@@ -135,10 +155,33 @@ public class BaseUI {
 		}
 	}
 
+	/* 
+	 * Sets up implicit wait for the WebDriver instance
+	 */
+	public void implicitWait(int seconds) {
+		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+	}
+
+	
+	/*
+	 *  returns WebElemet object when the locator key is passed as the parameter
+	 */
 	public WebElement getElement(String webElementKey) {
-
-		WebElement element = null;
-
+		WebElement element=null;
+		
+		try {
+			String locator = prop.getProperty(webElementKey);
+			element = driver.findElement(By.xpath(prop.getProperty(webElementKey)));
+			logger.log(Status.INFO, "WebElement identified : " + locator);
+		}
+		catch (Exception e) {
+			reportFail(e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Failing the testcase, Incorrect locator name : " + webElementKey);
+		}
+		
+		return element;
+		/*
 		try {
 			if (webElementKey.endsWith("_id")) {
 				String webElementId = prop.getProperty(webElementKey);
@@ -189,11 +232,11 @@ public class BaseUI {
 			e.printStackTrace();
 
 			Assert.fail("Failing the testcase, Incorrect locator name : " + webElementKey);
-		}
-
-		return element;
+		}*/
 	}
 
+	
+	
 	/********************* Verify Element *******************/
 
 	public boolean isElementPresent(String webElementKey) {
@@ -238,6 +281,8 @@ public class BaseUI {
 
 	}
 
+	
+	
 	/********************* Assertion Functions *******************/
 
 	public void assertTrue(boolean flag) {
@@ -258,6 +303,7 @@ public class BaseUI {
 		driver.quit();
 	}
 
+	
 	/********************* Reporting Functions *******************/
 
 	public void reportFail(String reportString) {
@@ -271,6 +317,7 @@ public class BaseUI {
 		logger.log(Status.PASS, reportString);
 	}
 
+	
 	/********************* Take Screenshot Function *******************/
 	public void takeScreenshot() {
 
@@ -290,6 +337,8 @@ public class BaseUI {
 
 	}
 
+	
+	
 	/********************* Manage Dropdown and Checkbox *******************/
 
 	public void selectDropdown(String webElementKey, String visibleText) {
@@ -315,6 +364,8 @@ public class BaseUI {
 		return values;
 	}
 
+	
+	
 	/********************* Drag and Drop *******************/
 
 }
