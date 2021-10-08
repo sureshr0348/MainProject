@@ -5,8 +5,9 @@
     <classes>
       <class name="com.defects.tests.LoginTest">
         <methods>
-          <include name="afterTest"/>
-          <include name="testOne"/>
+          <include name="teardown"/>
+          <include name="navigateToDefectsPage"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.defects.tests.LoginTest -->
     </classes>

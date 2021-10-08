@@ -17,9 +17,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -32,7 +32,7 @@ public class BaseUI {
 
 	public WebDriver driver;
 	public Properties prop;
-	public ExtentReports report = ExtentReportManager.getReportInstance();
+	public ExtentReports report;
 	public ExtentTest logger;
 
 	SoftAssert softAssert = new SoftAssert();
@@ -57,7 +57,9 @@ public class BaseUI {
 					e.printStackTrace();
 				}
 			}
-		} catch (Exception e) {
+			report = ExtentReportManager.getReportInstance();
+		}
+		catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
@@ -97,6 +99,10 @@ public class BaseUI {
 	 *  open the website URL of provided
 	 */
 	public void openURL(String websiteURLKey) {
+		
+		//String websiteURL = prop.getProperty(websiteURLKey);
+		//driver.get(websiteURL);
+
 		try {
 			String websiteURL = prop.getProperty(websiteURLKey);
 			driver.get(websiteURL);
@@ -171,7 +177,7 @@ public class BaseUI {
 		
 		try {
 			String locator = prop.getProperty(webElementKey);
-			element = driver.findElement(By.xpath(prop.getProperty(webElementKey)));
+			element = driver.findElement(By.xpath(locator));
 			logger.log(Status.INFO, "WebElement identified : " + locator);
 		}
 		catch (Exception e) {
@@ -296,13 +302,6 @@ public class BaseUI {
 	public void assertEquals(String actual, String expected) {
 		softAssert.assertEquals(actual, expected);
 	}
-
-	@AfterMethod
-	public void afterTest() {
-		softAssert.assertAll();
-		driver.quit();
-	}
-
 	
 	/********************* Reporting Functions *******************/
 
@@ -364,6 +363,15 @@ public class BaseUI {
 		return values;
 	}
 
+	
+	/********** Move Mouse Pointer Over Element **********/
+	
+	public void mousehover(String webElementKey) {
+		WebElement element = getElement(webElementKey);
+		
+		Actions act = new Actions(driver);
+		act.moveToElement(element).build().perform();
+	}
 	
 	
 	/********************* Drag and Drop *******************/
