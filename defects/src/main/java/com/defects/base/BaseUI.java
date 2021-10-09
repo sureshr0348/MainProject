@@ -4,12 +4,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,22 +20,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.defects.utils.DateUtils;
 import com.defects.utils.ExtentReportManager;
 
 public class BaseUI {
 
-	public WebDriver driver;
-	public Properties prop;
-	public ExtentReports report;
-	public ExtentTest logger;
+	public static WebDriver driver;
+	public static Properties prop;
+	public static ExtentReports report;
+	public static ExtentTest logger;
 
 	SoftAssert softAssert = new SoftAssert();
 
@@ -95,13 +98,14 @@ public class BaseUI {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
+	
+	
+	/***************** Handling Browser Window(driver) Methods *****************/
+	
 	/*
 	 *  open the website URL of provided
 	 */
 	public void openURL(String websiteURLKey) {
-		
-		//String websiteURL = prop.getProperty(websiteURLKey);
-		//driver.get(websiteURL);
 
 		try {
 			String websiteURL = prop.getProperty(websiteURLKey);
@@ -133,13 +137,42 @@ public class BaseUI {
 
 	
 	/*
+	 * Switch to a IFrame in the web page
+	 */
+	public void gotoFrame(String frameNameOrId) {
+		driver.switchTo().frame(frameNameOrId);
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		String currentFrame = (String) jsExecutor.executeScript("return self.name");
+		//System.out.println("Frame: " + currentFrame);
+		reportInfo("Switched to Frame : " + currentFrame);
+	}
+	
+	public void gotoFrame(int index) {
+		driver.switchTo().frame(index);
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		String currentFrame = (String) jsExecutor.executeScript("return self.name");
+		System.out.println("Frame: " + currentFrame);
+		reportInfo("Switched to Frame : " + currentFrame);
+	}
+	
+	/******************** Handling WebElements Methods ************************/
+	
+	/*
 	 *  Enter text in Input fields
 	 *  Key of the element locator from the .properties file and the test data 
 	 *  	to be entered is passed as parameters
 	 */
 	public void enterText(String webElementKey, String data) {
 		try {
-			getElement(webElementKey).sendKeys(data);
+			WebElement element = getElement(webElementKey);
+			
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			
+			element.click();
+			element.sendKeys(data);
 			logger.log(Status.PASS, "The text is entered");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -154,31 +187,46 @@ public class BaseUI {
 	 */
 	public void elementClick(String webElementKey) {
 		try {
-			getElement(webElementKey).click();
+			WebElement element = getElement(webElementKey);
+			
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			
+			element.click();
 			logger.log(Status.PASS, "The button is clicked");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
 
-	/* 
-	 * Sets up implicit wait for the WebDriver instance
-	 */
+	
+	/********************* WebDriver Waits *************************/
+	
 	public void implicitWait(int seconds) {
 		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
 
+	public void explicitWaitClickable(String webElementKey) {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement element = getElement(webElementKey);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
 	
-	/*
-	 *  returns WebElemet object when the locator key is passed as the parameter
-	 */
+	public void explicitWaitTitle(String titleExpected) {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.titleContains(titleExpected));
+	}
+	
+	
+	/******************* Get Element Methods *************************/
+	
 	public WebElement getElement(String webElementKey) {
 		WebElement element=null;
 		
 		try {
 			String locator = prop.getProperty(webElementKey);
 			element = driver.findElement(By.xpath(locator));
-			logger.log(Status.INFO, "WebElement identified : " + locator);
+			logger.log(Status.INFO, "WebElement identified : " + webElementKey);
 		}
 		catch (Exception e) {
 			reportFail(e.getMessage());
@@ -241,6 +289,25 @@ public class BaseUI {
 		}*/
 	}
 
+	
+	
+	public List<WebElement> getElements(String webElementKey) {
+		List<WebElement> elements = new ArrayList<WebElement>();
+		
+		try {
+			String locator = prop.getProperty(webElementKey);
+			elements = driver.findElements(By.xpath(locator));
+			logger.log(Status.INFO, "List of WebElements identified : " + locator);
+		}
+		catch (Exception e) {
+			reportFail(e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Failing the testcase, Incorrect locator name : " + webElementKey);
+		}
+		
+		return elements;
+	}
+	
 	
 	
 	/********************* Verify Element *******************/
@@ -315,25 +382,30 @@ public class BaseUI {
 
 		logger.log(Status.PASS, reportString);
 	}
+	
+	public void reportInfo(String reportString) {
+
+		logger.log(Status.INFO, reportString);
+	}
 
 	
 	/********************* Take Screenshot Function *******************/
-	public void takeScreenshot() {
+	public void takeScreenshot(String name) {
 
 		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenshot.getScreenshotAs(OutputType.FILE);
 
 		File destFile = new File(
-				System.getProperty("user.dir") + "\\ScreenShots\\" + DateUtils.getTimeStamp() + ".png");
+				System.getProperty("user.dir") + "\\ScreenShots\\" + name + ".png");
 
 		try {
 			FileUtils.copyFile(sourceFile, destFile);
 			logger.addScreenCaptureFromPath(
-					System.getProperty("user.dir") + "\\ScreenShots\\" + DateUtils.getTimeStamp() + ".png");
+					System.getProperty("user.dir") + "\\ScreenShots\\" + name + ".png");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		reportInfo("Screenshot " + name + " captured and saved");
 	}
 
 	
@@ -368,6 +440,9 @@ public class BaseUI {
 	
 	public void mousehover(String webElementKey) {
 		WebElement element = getElement(webElementKey);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();

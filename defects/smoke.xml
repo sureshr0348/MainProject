@@ -3,7 +3,9 @@
 <suite name="Smoke">
 	<test name="smoke">
 		<classes>
-			<class name="com.defects.tests.LoginTest"></class>
+			<class name="com.defects.tests.LoginTest"/>
+		  	<class name="com.defects.tests.AddDefectTest"/>
+			<class name="com.defects.tests.CommentsTest"/>
 		</classes>
 	</test>
 

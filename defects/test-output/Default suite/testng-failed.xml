@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.defects.tests.LoginTest">
+      <class name="com.defects.tests.CommentsTest">
         <methods>
-          <include name="teardown"/>
-          <include name="navigateToDefectsPage"/>
           <include name="setup"/>
+          <include name="close"/>
+          <include name="postComment"/>
+          <include name="openDefect"/>
+          <include name="navigateToCommentsTab"/>
         </methods>
-      </class> <!-- com.defects.tests.LoginTest -->
+      </class> <!-- com.defects.tests.CommentsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
