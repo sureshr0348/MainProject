@@ -179,6 +179,17 @@ public class BaseUI {
 		}
 
 	}
+	
+	public void enterTextWithoutWait(String webElementKey, String data) {
+		try {
+			WebElement element = getElement(webElementKey);
+			element.sendKeys(data);
+			logger.log(Status.PASS, "The text is entered");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+
+	}
 
 	
 	/*

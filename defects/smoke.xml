@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Smoke">
-	<test name="smoke">
+	<test name="smoke" thread-count="1" preserve-order="true">
 		<classes>
-			<class name="com.defects.tests.LoginTest"/>
-		  	<class name="com.defects.tests.AddDefectTest"/>
-			<class name="com.defects.tests.CommentsTest"/>
+			<class name="com.defects.tests.LoginTest" />
+			<class name="com.defects.tests.AddDefectTest" />
+			<class name="com.defects.tests.CommentsTest" />
+			<class name="com.defects.tests.AttachmentsTest" />
+			<class name="com.defects.tests.FiltersTest" />
 		</classes>
 	</test>
 

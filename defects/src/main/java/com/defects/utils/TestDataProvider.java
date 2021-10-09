@@ -11,7 +11,7 @@ public class TestDataProvider {
 	
 	public static Object[][] getTestData(String dataFileName,String sheetName, String testName) {
 		
-		ReadExcelDataFile readData = new ReadExcelDataFile(System.getProperty("user.dir") + "\\src\\main\\java\\testdata\\" + dataFileName + ".xlsx");
+		ReadExcelDataFile readData = new ReadExcelDataFile(System.getProperty("user.dir") + "\\src\\test\\resources\\objectRepository\\" + dataFileName + ".xlsx");
 		
 		int startRowNum = 0;
 		while(!readData.getCellData(sheetName, 0, startRowNum).equalsIgnoreCase(testName)) {

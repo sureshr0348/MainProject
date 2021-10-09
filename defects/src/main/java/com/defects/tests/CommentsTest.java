@@ -12,8 +12,11 @@ public class CommentsTest extends SuiteClass{
 	public void openDefect() {
 		
 		if (!(driver.getTitle().equalsIgnoreCase("Defects List"))) {
-			driver.switchTo().parentFrame();
-			elementClick("goToDefectsHomepage");
+			driver.get(prop.getProperty("baseURL"));
+			mousehover("menu");
+			elementClick("projectLink");
+			mousehover("executeMenu");
+			elementClick("defectsLink");
 		}
 		
 		List<WebElement> defects = getElements("defectsList");

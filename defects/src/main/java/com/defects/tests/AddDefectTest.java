@@ -8,8 +8,11 @@ public class AddDefectTest extends SuiteClass{
 	@BeforeClass
 	public void before() {
 		if (!(driver.getTitle().equalsIgnoreCase("Defects List"))) {
-			driver.switchTo().parentFrame();
-			elementClick("goToDefectsHomepage");
+			driver.get(prop.getProperty("baseURL"));
+			mousehover("menu");
+			elementClick("projectLink");
+			mousehover("executeMenu");
+			elementClick("defectsLink");
 		}
 	}
 	

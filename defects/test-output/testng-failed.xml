@@ -3,6 +3,18 @@
 <suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="smoke(failed)">
     <classes>
+      <class name="com.defects.tests.FiltersTest">
+        <methods>
+          <include name="CreateFilter"/>
+          <include name="setup"/>
+          <include name="CreateInvalidFilter"/>
+          <include name="close"/>
+          <include name="openDefect"/>
+          <include name="EditFilter"/>
+          <include name="clearFilter"/>
+          <include name="defectHomePageFunctionalities"/>
+        </methods>
+      </class> <!-- com.defects.tests.FiltersTest -->
       <class name="com.defects.tests.CommentsTest">
         <methods>
           <include name="setup"/>
@@ -13,15 +25,6 @@
           <include name="navigateToCommentsTab"/>
         </methods>
       </class> <!-- com.defects.tests.CommentsTest -->
-      <class name="com.defects.tests.AddDefectTest">
-        <methods>
-          <include name="setup"/>
-          <include name="before"/>
-          <include name="close"/>
-          <include name="fillDetails"/>
-          <include name="openAddDefectPage"/>
-        </methods>
-      </class> <!-- com.defects.tests.AddDefectTest -->
     </classes>
   </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [Smoke] -->

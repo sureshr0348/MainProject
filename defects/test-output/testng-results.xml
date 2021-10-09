@@ -1,57 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="11" passed="7" failed="0" skipped="0">
+<testng-results ignored="8" total="35" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-09T18:21:07 IST" name="Smoke" finished-at="2021-10-09T18:23:35 IST" duration-ms="148078">
+  <suite started-at="2021-10-09T22:10:52 IST" name="Smoke" finished-at="2021-10-09T22:15:15 IST" duration-ms="263031">
     <groups>
     </groups>
-    <test started-at="2021-10-09T18:21:07 IST" name="smoke" finished-at="2021-10-09T18:23:35 IST" duration-ms="148078">
+    <test started-at="2021-10-09T22:10:52 IST" name="smoke" finished-at="2021-10-09T22:15:15 IST" duration-ms="263031">
       <class name="com.defects.tests.AddDefectTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:com.defects.tests.AddDefectTest@17bffc17]" started-at="2021-10-09T18:21:48 IST" name="before" finished-at="2021-10-09T18:21:48 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:com.defects.tests.AddDefectTest@5fb759d6]" started-at="2021-10-09T22:11:09 IST" name="before" finished-at="2021-10-09T22:11:09 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="openAddDefectPage()[pri:1, instance:com.defects.tests.AddDefectTest@17bffc17]" started-at="2021-10-09T18:21:48 IST" name="openAddDefectPage" finished-at="2021-10-09T18:21:52 IST" duration-ms="4612" status="PASS">
+        <test-method signature="openAddDefectPage()[pri:1, instance:com.defects.tests.AddDefectTest@5fb759d6]" started-at="2021-10-09T22:11:09 IST" name="openAddDefectPage" finished-at="2021-10-09T22:11:14 IST" duration-ms="4698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAddDefectPage -->
-        <test-method signature="fillDetails()[pri:2, instance:com.defects.tests.AddDefectTest@17bffc17]" started-at="2021-10-09T18:21:52 IST" name="fillDetails" finished-at="2021-10-09T18:22:47 IST" duration-ms="54653" status="PASS">
+        <test-method signature="fillDetails()[pri:2, instance:com.defects.tests.AddDefectTest@5fb759d6]" started-at="2021-10-09T22:11:14 IST" name="fillDetails" finished-at="2021-10-09T22:12:07 IST" duration-ms="52797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillDetails -->
       </class> <!-- com.defects.tests.AddDefectTest -->
-      <class name="com.defects.tests.CommentsTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.CommentsTest@6e535154]" started-at="2021-10-09T18:22:47 IST" name="openDefect" finished-at="2021-10-09T18:22:57 IST" duration-ms="10150" status="PASS">
+      <class name="com.defects.tests.AttachmentsTest">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:03 IST" name="openDefect" finished-at="2021-10-09T22:13:20 IST" duration-ms="16805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="navigateToCommentsTab()[pri:1, instance:com.defects.tests.CommentsTest@6e535154]" started-at="2021-10-09T18:22:57 IST" name="navigateToCommentsTab" finished-at="2021-10-09T18:23:30 IST" duration-ms="32426" status="PASS">
+        <test-method signature="attachmentsTabNavigate()[pri:1, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:20 IST" name="attachmentsTabNavigate" finished-at="2021-10-09T22:13:52 IST" duration-ms="31876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachmentsTabNavigate -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:53 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:53 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.bmp, Format=BMP}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:53 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:53 IST" duration-ms="58" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.doc, Format=DOC}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:53 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:56 IST" duration-ms="2904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.docx, Format=DOCX}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:56 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:57 IST" duration-ms="781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.jpeg, Format=JPEG}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:57 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:57 IST" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.jpg, Format=JPG}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:57 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:59 IST" duration-ms="2159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.png, Format=PNG}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:59 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:13:59 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.ppt, Format=PPT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:13:59 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:14:01 IST" duration-ms="1606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.pptx, Format=PPTX}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:01 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:14:01 IST" duration-ms="59" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.txt, Format=TXT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:01 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:14:02 IST" duration-ms="1499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.xls, Format=XLS}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:02 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:14:02 IST" duration-ms="68" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.xlsm, Format=XLSM}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:02 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-09T22:14:04 IST" duration-ms="1428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FileName=uploadCheck.xlsx, Format=XLSX}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="singleAttachmentDelete()[pri:3, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:04 IST" name="singleAttachmentDelete" finished-at="2021-10-09T22:14:18 IST" duration-ms="14484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleAttachmentDelete -->
+        <test-method signature="allAttachmentDelete()[pri:4, instance:com.defects.tests.AttachmentsTest@5e7cd6cc]" started-at="2021-10-09T22:14:18 IST" name="allAttachmentDelete" finished-at="2021-10-09T22:14:24 IST" duration-ms="5403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allAttachmentDelete -->
+      </class> <!-- com.defects.tests.AttachmentsTest -->
+      <class name="com.defects.tests.CommentsTest">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.CommentsTest@4b8d604b]" started-at="2021-10-09T22:12:07 IST" name="openDefect" finished-at="2021-10-09T22:12:25 IST" duration-ms="17776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openDefect -->
+        <test-method signature="navigateToCommentsTab()[pri:1, instance:com.defects.tests.CommentsTest@4b8d604b]" started-at="2021-10-09T22:12:25 IST" name="navigateToCommentsTab" finished-at="2021-10-09T22:12:57 IST" duration-ms="32637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToCommentsTab -->
-        <test-method signature="postComment()[pri:2, instance:com.defects.tests.CommentsTest@6e535154]" started-at="2021-10-09T18:23:30 IST" name="postComment" finished-at="2021-10-09T18:23:32 IST" duration-ms="2857" status="PASS">
+        <test-method signature="postComment()[pri:2, instance:com.defects.tests.CommentsTest@4b8d604b]" started-at="2021-10-09T22:12:57 IST" name="postComment" finished-at="2021-10-09T22:13:00 IST" duration-ms="3020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postComment -->
-        <test-method signature="replyComment()[pri:3, instance:com.defects.tests.CommentsTest@6e535154]" started-at="2021-10-09T18:23:32 IST" name="replyComment" finished-at="2021-10-09T18:23:35 IST" duration-ms="2888" status="PASS">
+        <test-method signature="replyComment()[pri:3, instance:com.defects.tests.CommentsTest@4b8d604b]" started-at="2021-10-09T22:13:00 IST" name="replyComment" finished-at="2021-10-09T22:13:03 IST" duration-ms="3084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- replyComment -->
       </class> <!-- com.defects.tests.CommentsTest -->
+      <class name="com.defects.tests.FiltersTest">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:14:24 IST" name="openDefect" finished-at="2021-10-09T22:14:31 IST" duration-ms="7252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openDefect -->
+        <test-method signature="defectHomePageFunctionalities()[pri:3, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:14:31 IST" name="defectHomePageFunctionalities" finished-at="2021-10-09T22:14:45 IST" duration-ms="13614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defectHomePageFunctionalities -->
+        <test-method signature="CreateInvalidFilter()[pri:4, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:14:45 IST" name="CreateInvalidFilter" finished-at="2021-10-09T22:14:50 IST" duration-ms="5235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateInvalidFilter -->
+        <test-method signature="CreateFilter()[pri:5, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:14:50 IST" name="CreateFilter" finished-at="2021-10-09T22:14:55 IST" duration-ms="4911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateFilter -->
+        <test-method signature="EditFilter()[pri:5, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:14:55 IST" name="EditFilter" finished-at="2021-10-09T22:15:10 IST" duration-ms="15215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditFilter -->
+        <test-method signature="clearFilter()[pri:6, instance:com.defects.tests.FiltersTest@68c9d179]" started-at="2021-10-09T22:15:10 IST" name="clearFilter" finished-at="2021-10-09T22:15:15 IST" duration-ms="5056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+      </class> <!-- com.defects.tests.FiltersTest -->
       <class name="com.defects.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.defects.tests.LoginTest@3cce5371]" started-at="2021-10-09T18:21:01 IST" name="setup" finished-at="2021-10-09T18:21:07 IST" duration-ms="6081" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.defects.tests.LoginTest@57bc27f5]" started-at="2021-10-09T22:10:45 IST" name="setup" finished-at="2021-10-09T22:10:52 IST" duration-ms="7470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.defects.tests.LoginTest@3cce5371]" started-at="2021-10-09T18:21:07 IST" name="Login" finished-at="2021-10-09T18:21:39 IST" duration-ms="31239" status="PASS">
+        <test-method signature="Login()[pri:1, instance:com.defects.tests.LoginTest@57bc27f5]" started-at="2021-10-09T22:10:52 IST" name="Login" finished-at="2021-10-09T22:11:00 IST" duration-ms="8396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="navigateToDefectsPage()[pri:2, instance:com.defects.tests.LoginTest@3cce5371]" started-at="2021-10-09T18:21:39 IST" name="navigateToDefectsPage" finished-at="2021-10-09T18:21:48 IST" duration-ms="9173" status="PASS">
+        <test-method signature="navigateToDefectsPage()[pri:2, instance:com.defects.tests.LoginTest@57bc27f5]" started-at="2021-10-09T22:11:00 IST" name="navigateToDefectsPage" finished-at="2021-10-09T22:11:09 IST" duration-ms="8894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToDefectsPage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.defects.tests.LoginTest@3cce5371]" started-at="2021-10-09T18:23:35 IST" name="close" finished-at="2021-10-09T18:23:37 IST" duration-ms="1147" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.defects.tests.LoginTest@57bc27f5]" started-at="2021-10-09T22:15:15 IST" name="close" finished-at="2021-10-09T22:15:17 IST" duration-ms="1579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
