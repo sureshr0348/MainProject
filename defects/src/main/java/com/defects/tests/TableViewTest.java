@@ -37,9 +37,9 @@ public class TableViewTest extends SuiteClass {
 		
 		enterText("tableViewName","Test_Table");
 		
+		takeScreenshot("TableViewInvalid");
 		elementClick("tableViewSave");
 		
-		takeScreenshot("TableViewInvalid");
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 		
@@ -134,9 +134,9 @@ public class TableViewTest extends SuiteClass {
 		
 		elementClick("tableViewReset");
 		
+		takeScreenshot("TableViewEdit");
         elementClick("tableViewDelete");
         
-		takeScreenshot("TableViewEdit");
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 

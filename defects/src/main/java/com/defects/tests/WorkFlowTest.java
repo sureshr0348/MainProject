@@ -173,7 +173,8 @@ public class WorkFlowTest extends SuiteClass {
 		
 		enterText("newTabDescription", "This is final description");
 		elementClick("newTabOkBtn");
-		//driver.switchTo().window(parent);
+		Thread.sleep(2000);
+		driver.switchTo().window(parent);
 	}
 	
 }

@@ -3,26 +3,14 @@
 <suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="smoke(failed)">
     <classes>
-      <class name="com.defects.tests.TableViewTest">
+      <class name="com.defects.tests.SortAndSearchTest">
         <methods>
-          <include name="EditTable"/>
-          <include name="createInvalidTable"/>
           <include name="setup"/>
           <include name="close"/>
           <include name="openDefect"/>
-          <include name="createValidTable"/>
+          <include name="sortTest"/>
         </methods>
-      </class> <!-- com.defects.tests.TableViewTest -->
-      <class name="com.defects.tests.WorkFlowTest">
-        <methods>
-          <include name="RouteToPerformer"/>
-          <include name="setup"/>
-          <include name="RouteToApprover"/>
-          <include name="close"/>
-          <include name="openDefect"/>
-          <include name="closeDefect"/>
-        </methods>
-      </class> <!-- com.defects.tests.WorkFlowTest -->
+      </class> <!-- com.defects.tests.SortAndSearchTest -->
     </classes>
   </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [Smoke] -->
