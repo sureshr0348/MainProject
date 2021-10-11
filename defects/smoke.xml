@@ -4,10 +4,12 @@
 	<test name="smoke" thread-count="1" preserve-order="true">
 		<classes>
 			<class name="com.defects.tests.LoginTest" />
-			<class name="com.defects.tests.AddDefectTest" />
-			<class name="com.defects.tests.CommentsTest" />
+			<class name="com.defects.tests.AddDefectTest"/>
+			<class name="com.defects.tests.CommentsTest"/>
 			<class name="com.defects.tests.AttachmentsTest" />
+			<class name="com.defects.tests.PreviousVersionsTest"/>
 			<class name="com.defects.tests.FiltersTest" />
+			<class name="com.defects.tests.TableViewTest"/>
 		</classes>
 	</test>
 
