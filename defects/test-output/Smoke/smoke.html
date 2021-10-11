@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>smoke</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>31/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 11 11:33:02 IST 2021</td>
+<td>Started on:</td><td>Mon Oct 11 12:51:25 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>359 seconds (359531 ms)</td>
+<tr><td>Total time:</td><td>572 seconds (572548 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,306 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.defects.tests.TableViewTest.EditTable()'><b>EditTable</b><br>Test class: com.defects.tests.TableViewTest</td>
+<td><div><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.TableViewTest.EditTable(TableViewTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483248042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483248042'><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.TableViewTest.EditTable(TableViewTest.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.defects.tests.TableViewTest@5890e879</td></tr>
+<tr>
+<td title='com.defects.tests.WorkFlowTest.RouteToApprover()'><b>RouteToApprover</b><br>Test class: com.defects.tests.WorkFlowTest</td>
+<td><div><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : statusBtnInDetails
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.selectDropdown(BaseUI.java:428)
+	at com.defects.tests.WorkFlowTest.RouteToApprover(WorkFlowTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace64364705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace64364705'><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : statusBtnInDetails
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.selectDropdown(BaseUI.java:428)
+	at com.defects.tests.WorkFlowTest.RouteToApprover(WorkFlowTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.defects.tests.WorkFlowTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.defects.tests.WorkFlowTest.RouteToPerformer()'><b>RouteToPerformer</b><br>Test class: com.defects.tests.WorkFlowTest</td>
+<td><div><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : saveBtn
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.WorkFlowTest.RouteToPerformer(WorkFlowTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124581953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124581953'><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : saveBtn
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.WorkFlowTest.RouteToPerformer(WorkFlowTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.defects.tests.WorkFlowTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.defects.tests.WorkFlowTest.closeDefect()'><b>closeDefect</b><br>Test class: com.defects.tests.WorkFlowTest</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.defects.tests.WorkFlowTest.closeDefect(WorkFlowTest.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace817833695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace817833695'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.defects.tests.WorkFlowTest.closeDefect(WorkFlowTest.java:138)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>com.defects.tests.WorkFlowTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.defects.tests.TableViewTest.createInvalidTable()'><b>createInvalidTable</b><br>Test class: com.defects.tests.TableViewTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please note that the selected view must have at least one column.}
+  (Session info: MicrosoftEdge=94.0.992.38): Please note that the selected view must have at least one column.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LTIN219977&apos;, ip: &apos;10.175.207.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 94.0.992.38, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:57427}, msedge: {msedgedriverVersion: 94.0.992.38 (55a0a486d5c4c1..., userDataDir: C:\Users\922137\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 963ec1cbed8d56b7d05b403a22297e61
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.defects.base.BaseUI.takeScreenshot(BaseUI.java:407)
+	at com.defects.tests.TableViewTest.createInvalidTable(TableViewTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1182725120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1182725120'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please note that the selected view must have at least one column.}
+  (Session info: MicrosoftEdge=94.0.992.38): Please note that the selected view must have at least one column.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LTIN219977&apos;, ip: &apos;10.175.207.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 94.0.992.38, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:57427}, msedge: {msedgedriverVersion: 94.0.992.38 (55a0a486d5c4c1..., userDataDir: C:\Users\922137\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 963ec1cbed8d56b7d05b403a22297e61
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.defects.base.BaseUI.takeScreenshot(BaseUI.java:407)
+	at com.defects.tests.TableViewTest.createInvalidTable(TableViewTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.defects.tests.TableViewTest@5890e879</td></tr>
+<tr>
+<td title='com.defects.tests.TableViewTest.createValidTable()'><b>createValidTable</b><br>Test class: com.defects.tests.TableViewTest</td>
+<td><div><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.TableViewTest.createValidTable(TableViewTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663317819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663317819'><pre>java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+	at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+	at com.defects.tests.TableViewTest.createValidTable(TableViewTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.defects.tests.TableViewTest@5890e879</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,168 +377,158 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.defects.tests.FiltersTest.CreateFilter()'><b>CreateFilter</b><br>Test class: com.defects.tests.FiltersTest</td>
 <td></td>
-<td>8</td>
-<td>com.defects.tests.FiltersTest@5c7933ad</td></tr>
+<td>9</td>
+<td>com.defects.tests.FiltersTest@6c284af</td></tr>
 <tr>
 <td title='com.defects.tests.FiltersTest.CreateInvalidFilter()'><b>CreateInvalidFilter</b><br>Test class: com.defects.tests.FiltersTest</td>
 <td></td>
-<td>5</td>
-<td>com.defects.tests.FiltersTest@5c7933ad</td></tr>
+<td>6</td>
+<td>com.defects.tests.FiltersTest@6c284af</td></tr>
 <tr>
 <td title='com.defects.tests.FiltersTest.EditFilter()'><b>EditFilter</b><br>Test class: com.defects.tests.FiltersTest</td>
 <td></td>
-<td>8</td>
-<td>com.defects.tests.FiltersTest@5c7933ad</td></tr>
-<tr>
-<td title='com.defects.tests.TableViewTest.EditTable()'><b>EditTable</b><br>Test class: com.defects.tests.TableViewTest</td>
-<td></td>
-<td>5</td>
-<td>com.defects.tests.TableViewTest@57bc27f5</td></tr>
+<td>10</td>
+<td>com.defects.tests.FiltersTest@6c284af</td></tr>
 <tr>
 <td title='com.defects.tests.LoginTest.Login()'><b>Login</b><br>Test class: com.defects.tests.LoginTest</td>
 <td></td>
 <td>8</td>
-<td>com.defects.tests.LoginTest@65f8f5ae</td></tr>
+<td>com.defects.tests.LoginTest@7ce69770</td></tr>
 <tr>
 <td title='com.defects.tests.PreviousVersionsTest.VersionDifference()'><b>VersionDifference</b><br>Test class: com.defects.tests.PreviousVersionsTest</td>
 <td></td>
-<td>19</td>
-<td>com.defects.tests.PreviousVersionsTest@790da477</td></tr>
+<td>18</td>
+<td>com.defects.tests.PreviousVersionsTest@7e057f43</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.allAttachmentDelete()'><b>allAttachmentDelete</b><br>Test class: com.defects.tests.AttachmentsTest</td>
 <td></td>
 <td>5</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
+<tr>
+<td title='com.defects.tests.WorkFlowTest.assignParticipants()'><b>assignParticipants</b><br>Test class: com.defects.tests.WorkFlowTest</td>
+<td></td>
+<td>32</td>
+<td>com.defects.tests.WorkFlowTest@6e9a5ed8</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.attachmentsTabNavigate()'><b>attachmentsTabNavigate</b><br>Test class: com.defects.tests.AttachmentsTest</td>
 <td></td>
-<td>31</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>32</td>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.FiltersTest.clearFilter()'><b>clearFilter</b><br>Test class: com.defects.tests.FiltersTest</td>
 <td></td>
 <td>1</td>
-<td>com.defects.tests.FiltersTest@5c7933ad</td></tr>
-<tr>
-<td title='com.defects.tests.TableViewTest.createInvalidTable()'><b>createInvalidTable</b><br>Test class: com.defects.tests.TableViewTest</td>
-<td></td>
-<td>2</td>
-<td>com.defects.tests.TableViewTest@57bc27f5</td></tr>
-<tr>
-<td title='com.defects.tests.TableViewTest.createValidTable()'><b>createValidTable</b><br>Test class: com.defects.tests.TableViewTest</td>
-<td></td>
-<td>3</td>
-<td>com.defects.tests.TableViewTest@57bc27f5</td></tr>
+<td>com.defects.tests.FiltersTest@6c284af</td></tr>
 <tr>
 <td title='com.defects.tests.FiltersTest.defectHomePageFunctionalities()'><b>defectHomePageFunctionalities</b><br>Test class: com.defects.tests.FiltersTest</td>
 <td></td>
-<td>14</td>
-<td>com.defects.tests.FiltersTest@5c7933ad</td></tr>
+<td>16</td>
+<td>com.defects.tests.FiltersTest@6c284af</td></tr>
 <tr>
 <td title='com.defects.tests.AddDefectTest.fillDetails()'><b>fillDetails</b><br>Test class: com.defects.tests.AddDefectTest</td>
 <td></td>
-<td>56</td>
-<td>com.defects.tests.AddDefectTest@431cd9b2</td></tr>
+<td>54</td>
+<td>com.defects.tests.AddDefectTest@1750fbeb</td></tr>
 <tr>
 <td title='com.defects.tests.PreviousVersionsTest.invalidVersionDifference()'><b>invalidVersionDifference</b><br>Test class: com.defects.tests.PreviousVersionsTest</td>
 <td></td>
-<td>2</td>
-<td>com.defects.tests.PreviousVersionsTest@790da477</td></tr>
+<td>3</td>
+<td>com.defects.tests.PreviousVersionsTest@7e057f43</td></tr>
 <tr>
 <td title='com.defects.tests.CommentsTest.navigateToCommentsTab()'><b>navigateToCommentsTab</b><br>Test class: com.defects.tests.CommentsTest</td>
 <td></td>
 <td>32</td>
-<td>com.defects.tests.CommentsTest@38467116</td></tr>
+<td>com.defects.tests.CommentsTest@5b247367</td></tr>
 <tr>
 <td title='com.defects.tests.LoginTest.navigateToDefectsPage()'><b>navigateToDefectsPage</b><br>Test class: com.defects.tests.LoginTest</td>
 <td></td>
-<td>12</td>
-<td>com.defects.tests.LoginTest@65f8f5ae</td></tr>
+<td>15</td>
+<td>com.defects.tests.LoginTest@7ce69770</td></tr>
 <tr>
 <td title='com.defects.tests.PreviousVersionsTest.navigateToPreviousVersions()'><b>navigateToPreviousVersions</b><br>Test class: com.defects.tests.PreviousVersionsTest</td>
 <td></td>
 <td>32</td>
-<td>com.defects.tests.PreviousVersionsTest@790da477</td></tr>
+<td>com.defects.tests.PreviousVersionsTest@7e057f43</td></tr>
 <tr>
 <td title='com.defects.tests.AddDefectTest.openAddDefectPage()'><b>openAddDefectPage</b><br>Test class: com.defects.tests.AddDefectTest</td>
 <td></td>
-<td>4</td>
-<td>com.defects.tests.AddDefectTest@431cd9b2</td></tr>
+<td>8</td>
+<td>com.defects.tests.AddDefectTest@1750fbeb</td></tr>
 <tr>
 <td title='com.defects.tests.CommentsTest.postComment()'><b>postComment</b><br>Test class: com.defects.tests.CommentsTest</td>
 <td></td>
 <td>3</td>
-<td>com.defects.tests.CommentsTest@38467116</td></tr>
+<td>com.defects.tests.CommentsTest@5b247367</td></tr>
 <tr>
 <td title='com.defects.tests.CommentsTest.replyComment()'><b>replyComment</b><br>Test class: com.defects.tests.CommentsTest</td>
 <td></td>
 <td>3</td>
-<td>com.defects.tests.CommentsTest@38467116</td></tr>
+<td>com.defects.tests.CommentsTest@5b247367</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.singleAttachmentDelete()'><b>singleAttachmentDelete</b><br>Test class: com.defects.tests.AttachmentsTest</td>
 <td></td>
 <td>14</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.bmp, Format=BMP}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.doc, Format=DOC}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.docx, Format=DOCX}</td>
 <td></td>
-<td>3</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>2</td>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.jpeg, Format=JPEG}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.jpg, Format=JPG}</td>
 <td></td>
 <td>1</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.png, Format=PNG}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.ppt, Format=PPT}</td>
 <td></td>
 <td>1</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.pptx, Format=PPTX}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.txt, Format=TXT}</td>
 <td></td>
 <td>1</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.xls, Format=XLS}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.xlsm, Format=XLSM}</td>
 <td></td>
 <td>1</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 <tr>
 <td title='com.defects.tests.AttachmentsTest.test()'><b>test</b><br>Test class: com.defects.tests.AttachmentsTest<br>Parameters: {FileName=uploadCheck.xlsx, Format=XLSX}</td>
 <td></td>
 <td>0</td>
-<td>com.defects.tests.AttachmentsTest@5b7a7f33</td></tr>
+<td>com.defects.tests.AttachmentsTest@268f106e</td></tr>
 </table><p>
 </body>
 </html>

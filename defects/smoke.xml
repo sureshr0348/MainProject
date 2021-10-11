@@ -7,9 +7,11 @@
 			<class name="com.defects.tests.AddDefectTest"/>
 			<class name="com.defects.tests.CommentsTest"/>
 			<class name="com.defects.tests.AttachmentsTest" />
+			<class name="com.defects.tests.WorkFlowTest"/>
 			<class name="com.defects.tests.PreviousVersionsTest"/>
 			<class name="com.defects.tests.FiltersTest" />
 			<class name="com.defects.tests.TableViewTest"/>
+			<class name="com.defects.tests.SortTest"/>
 		</classes>
 	</test>
 

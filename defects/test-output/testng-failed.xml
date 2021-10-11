@@ -3,28 +3,26 @@
 <suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="smoke(failed)">
     <classes>
-      <class name="com.defects.tests.FiltersTest">
+      <class name="com.defects.tests.TableViewTest">
         <methods>
-          <include name="CreateFilter"/>
-          <include name="setup"/>
-          <include name="CreateInvalidFilter"/>
-          <include name="close"/>
-          <include name="openDefect"/>
-          <include name="EditFilter"/>
-          <include name="clearFilter"/>
-          <include name="defectHomePageFunctionalities"/>
-        </methods>
-      </class> <!-- com.defects.tests.FiltersTest -->
-      <class name="com.defects.tests.CommentsTest">
-        <methods>
+          <include name="EditTable"/>
+          <include name="createInvalidTable"/>
           <include name="setup"/>
           <include name="close"/>
-          <include name="postComment"/>
           <include name="openDefect"/>
-          <include name="replyComment"/>
-          <include name="navigateToCommentsTab"/>
+          <include name="createValidTable"/>
         </methods>
-      </class> <!-- com.defects.tests.CommentsTest -->
+      </class> <!-- com.defects.tests.TableViewTest -->
+      <class name="com.defects.tests.WorkFlowTest">
+        <methods>
+          <include name="RouteToPerformer"/>
+          <include name="setup"/>
+          <include name="RouteToApprover"/>
+          <include name="close"/>
+          <include name="openDefect"/>
+          <include name="closeDefect"/>
+        </methods>
+      </class> <!-- com.defects.tests.WorkFlowTest -->
     </classes>
   </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [Smoke] -->

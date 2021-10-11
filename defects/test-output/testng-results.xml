@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="45" passed="33" failed="0" skipped="0">
+<testng-results ignored="14" total="51" passed="31" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-11T11:33:02 IST" name="Smoke" finished-at="2021-10-11T11:39:02 IST" duration-ms="359531">
+  <suite started-at="2021-10-11T12:51:25 IST" name="Smoke" finished-at="2021-10-11T13:00:58 IST" duration-ms="572548">
     <groups>
     </groups>
-    <test started-at="2021-10-11T11:33:02 IST" name="smoke" finished-at="2021-10-11T11:39:02 IST" duration-ms="359531">
+    <test started-at="2021-10-11T12:51:25 IST" name="smoke" finished-at="2021-10-11T13:00:58 IST" duration-ms="572548">
       <class name="com.defects.tests.AddDefectTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:com.defects.tests.AddDefectTest@431cd9b2]" started-at="2021-10-11T11:33:23 IST" name="before" finished-at="2021-10-11T11:33:23 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:com.defects.tests.AddDefectTest@1750fbeb]" started-at="2021-10-11T12:51:49 IST" name="before" finished-at="2021-10-11T12:51:57 IST" duration-ms="7816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="openAddDefectPage()[pri:1, instance:com.defects.tests.AddDefectTest@431cd9b2]" started-at="2021-10-11T11:33:23 IST" name="openAddDefectPage" finished-at="2021-10-11T11:33:28 IST" duration-ms="4845" status="PASS">
+        <test-method signature="openAddDefectPage()[pri:1, instance:com.defects.tests.AddDefectTest@1750fbeb]" started-at="2021-10-11T12:51:57 IST" name="openAddDefectPage" finished-at="2021-10-11T12:52:05 IST" duration-ms="8336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAddDefectPage -->
-        <test-method signature="fillDetails()[pri:2, instance:com.defects.tests.AddDefectTest@431cd9b2]" started-at="2021-10-11T11:33:28 IST" name="fillDetails" finished-at="2021-10-11T11:34:24 IST" duration-ms="56835" status="PASS">
+        <test-method signature="fillDetails()[pri:2, instance:com.defects.tests.AddDefectTest@1750fbeb]" started-at="2021-10-11T12:52:05 IST" name="fillDetails" finished-at="2021-10-11T12:53:00 IST" duration-ms="54659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillDetails -->
       </class> <!-- com.defects.tests.AddDefectTest -->
       <class name="com.defects.tests.AttachmentsTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:35:23 IST" name="openDefect" finished-at="2021-10-11T11:35:46 IST" duration-ms="22498" status="PASS">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:00 IST" name="openDefect" finished-at="2021-10-11T12:54:21 IST" duration-ms="21201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="attachmentsTabNavigate()[pri:1, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:35:46 IST" name="attachmentsTabNavigate" finished-at="2021-10-11T11:36:18 IST" duration-ms="31908" status="PASS">
+        <test-method signature="attachmentsTabNavigate()[pri:1, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:21 IST" name="attachmentsTabNavigate" finished-at="2021-10-11T12:54:54 IST" duration-ms="32110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachmentsTabNavigate -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:19 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:19 IST" duration-ms="84" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:55 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:55 IST" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:19 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:19 IST" duration-ms="65" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:55 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:55 IST" duration-ms="68" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:19 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:22 IST" duration-ms="3067" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:55 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:57 IST" duration-ms="2664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:22 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:22 IST" duration-ms="63" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:57 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:58 IST" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:22 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:24 IST" duration-ms="1376" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:58 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:59 IST" duration-ms="1338" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:24 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:24 IST" duration-ms="58" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:59 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:54:59 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:24 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:25 IST" duration-ms="1438" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:54:59 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:00 IST" duration-ms="1477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:25 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:25 IST" duration-ms="54" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:00 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:01 IST" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:25 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:27 IST" duration-ms="1725" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:01 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:02 IST" duration-ms="1574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:27 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:27 IST" duration-ms="62" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:02 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:02 IST" duration-ms="79" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +139,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:27 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:28 IST" duration-ms="1371" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:02 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:04 IST" duration-ms="1476" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:28 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T11:36:28 IST" duration-ms="56" status="PASS">
+        <test-method signature="test(java.util.Hashtable)[pri:2, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:04 IST" name="test" data-provider="fileUploadData" finished-at="2021-10-11T12:55:04 IST" duration-ms="65" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,109 +161,396 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="singleAttachmentDelete()[pri:3, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:28 IST" name="singleAttachmentDelete" finished-at="2021-10-11T11:36:43 IST" duration-ms="14427" status="PASS">
+        <test-method signature="singleAttachmentDelete()[pri:3, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:04 IST" name="singleAttachmentDelete" finished-at="2021-10-11T12:55:18 IST" duration-ms="14585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleAttachmentDelete -->
-        <test-method signature="allAttachmentDelete()[pri:4, instance:com.defects.tests.AttachmentsTest@5b7a7f33]" started-at="2021-10-11T11:36:43 IST" name="allAttachmentDelete" finished-at="2021-10-11T11:36:48 IST" duration-ms="5419" status="PASS">
+        <test-method signature="allAttachmentDelete()[pri:4, instance:com.defects.tests.AttachmentsTest@268f106e]" started-at="2021-10-11T12:55:18 IST" name="allAttachmentDelete" finished-at="2021-10-11T12:55:24 IST" duration-ms="5435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allAttachmentDelete -->
       </class> <!-- com.defects.tests.AttachmentsTest -->
       <class name="com.defects.tests.TableViewTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.TableViewTest@57bc27f5]" started-at="2021-10-11T11:38:50 IST" name="openDefect" finished-at="2021-10-11T11:38:50 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.TableViewTest@5890e879]" started-at="2021-10-11T12:59:55 IST" name="openDefect" finished-at="2021-10-11T12:59:55 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="createInvalidTable()[pri:1, instance:com.defects.tests.TableViewTest@57bc27f5]" started-at="2021-10-11T11:38:50 IST" name="createInvalidTable" finished-at="2021-10-11T11:38:52 IST" duration-ms="2095" status="PASS">
+        <test-method signature="createInvalidTable()[pri:1, instance:com.defects.tests.TableViewTest@5890e879]" started-at="2021-10-11T12:59:55 IST" name="createInvalidTable" finished-at="2021-10-11T12:59:58 IST" duration-ms="2601" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Please note that the selected view must have at least one column.}
+  (Session info: MicrosoftEdge=94.0.992.38): Please note that the selected view must have at least one column.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIN219977', ip: '10.175.207.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 94.0.992.38, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:57427}, msedge: {msedgedriverVersion: 94.0.992.38 (55a0a486d5c4c1..., userDataDir: C:\Users\922137\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 963ec1cbed8d56b7d05b403a22297e61]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please note that the selected view must have at least one column.}
+  (Session info: MicrosoftEdge=94.0.992.38): Please note that the selected view must have at least one column.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIN219977', ip: '10.175.207.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 94.0.992.38, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:57427}, msedge: {msedgedriverVersion: 94.0.992.38 (55a0a486d5c4c1..., userDataDir: C:\Users\922137\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 963ec1cbed8d56b7d05b403a22297e61
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.defects.base.BaseUI.takeScreenshot(BaseUI.java:407)
+at com.defects.tests.TableViewTest.createInvalidTable(TableViewTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInvalidTable -->
-        <test-method signature="createValidTable()[pri:2, instance:com.defects.tests.TableViewTest@57bc27f5]" started-at="2021-10-11T11:38:52 IST" name="createValidTable" finished-at="2021-10-11T11:38:56 IST" duration-ms="3677" status="PASS">
+        <test-method signature="createValidTable()[pri:2, instance:com.defects.tests.TableViewTest@5890e879]" started-at="2021-10-11T12:59:58 IST" name="createValidTable" finished-at="2021-10-11T13:00:28 IST" duration-ms="30049" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failing the testcase, Incorrect locator name : tableIcon]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+at org.testng.Assert.fail(Assert.java:97)
+at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+at com.defects.tests.TableViewTest.createValidTable(TableViewTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createValidTable -->
-        <test-method signature="EditTable()[pri:3, instance:com.defects.tests.TableViewTest@57bc27f5]" started-at="2021-10-11T11:38:56 IST" name="EditTable" finished-at="2021-10-11T11:39:02 IST" duration-ms="5671" status="PASS">
+        <test-method signature="EditTable()[pri:3, instance:com.defects.tests.TableViewTest@5890e879]" started-at="2021-10-11T13:00:28 IST" name="EditTable" finished-at="2021-10-11T13:00:58 IST" duration-ms="30038" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failing the testcase, Incorrect locator name : tableIcon]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failing the testcase, Incorrect locator name : tableIcon
+at org.testng.Assert.fail(Assert.java:97)
+at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+at com.defects.tests.TableViewTest.EditTable(TableViewTest.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditTable -->
       </class> <!-- com.defects.tests.TableViewTest -->
-      <class name="com.defects.tests.FiltersTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:03 IST" name="openDefect" finished-at="2021-10-11T11:38:12 IST" duration-ms="8824" status="PASS">
+      <class name="com.defects.tests.WorkFlowTest">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.WorkFlowTest@6e9a5ed8]" started-at="2021-10-11T12:55:24 IST" name="openDefect" finished-at="2021-10-11T12:55:41 IST" duration-ms="17732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="defectHomePageFunctionalities()[pri:3, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:12 IST" name="defectHomePageFunctionalities" finished-at="2021-10-11T11:38:27 IST" duration-ms="14549" status="PASS">
+        <test-method signature="assignParticipants()[pri:1, instance:com.defects.tests.WorkFlowTest@6e9a5ed8]" started-at="2021-10-11T12:55:41 IST" name="assignParticipants" finished-at="2021-10-11T12:56:14 IST" duration-ms="32554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignParticipants -->
+        <test-method signature="RouteToPerformer()[pri:2, instance:com.defects.tests.WorkFlowTest@6e9a5ed8]" started-at="2021-10-11T12:56:14 IST" name="RouteToPerformer" finished-at="2021-10-11T12:56:14 IST" duration-ms="23" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failing the testcase, Incorrect locator name : saveBtn]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failing the testcase, Incorrect locator name : saveBtn
+at org.testng.Assert.fail(Assert.java:97)
+at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+at com.defects.base.BaseUI.elementClick(BaseUI.java:201)
+at com.defects.tests.WorkFlowTest.RouteToPerformer(WorkFlowTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RouteToPerformer -->
+        <test-method signature="RouteToApprover()[pri:3, instance:com.defects.tests.WorkFlowTest@6e9a5ed8]" started-at="2021-10-11T12:56:14 IST" name="RouteToApprover" finished-at="2021-10-11T12:57:06 IST" duration-ms="51818" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failing the testcase, Incorrect locator name : statusBtnInDetails]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failing the testcase, Incorrect locator name : statusBtnInDetails
+at org.testng.Assert.fail(Assert.java:97)
+at com.defects.base.BaseUI.getElement(BaseUI.java:245)
+at com.defects.base.BaseUI.selectDropdown(BaseUI.java:428)
+at com.defects.tests.WorkFlowTest.RouteToApprover(WorkFlowTest.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RouteToApprover -->
+        <test-method signature="closeDefect()[pri:4, instance:com.defects.tests.WorkFlowTest@6e9a5ed8]" started-at="2021-10-11T12:57:06 IST" name="closeDefect" finished-at="2021-10-11T12:57:47 IST" duration-ms="40654" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at com.defects.tests.WorkFlowTest.closeDefect(WorkFlowTest.java:138)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDefect -->
+      </class> <!-- com.defects.tests.WorkFlowTest -->
+      <class name="com.defects.tests.FiltersTest">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:00 IST" name="openDefect" finished-at="2021-10-11T12:59:11 IST" duration-ms="11178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openDefect -->
+        <test-method signature="defectHomePageFunctionalities()[pri:3, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:11 IST" name="defectHomePageFunctionalities" finished-at="2021-10-11T12:59:27 IST" duration-ms="16276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defectHomePageFunctionalities -->
-        <test-method signature="CreateInvalidFilter()[pri:4, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:27 IST" name="CreateInvalidFilter" finished-at="2021-10-11T11:38:32 IST" duration-ms="5672" status="PASS">
+        <test-method signature="CreateInvalidFilter()[pri:4, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:27 IST" name="CreateInvalidFilter" finished-at="2021-10-11T12:59:34 IST" duration-ms="6411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateInvalidFilter -->
-        <test-method signature="CreateFilter()[pri:5, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:32 IST" name="CreateFilter" finished-at="2021-10-11T11:38:41 IST" duration-ms="8628" status="PASS">
+        <test-method signature="CreateFilter()[pri:5, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:34 IST" name="CreateFilter" finished-at="2021-10-11T12:59:43 IST" duration-ms="9492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateFilter -->
-        <test-method signature="EditFilter()[pri:5, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:41 IST" name="EditFilter" finished-at="2021-10-11T11:38:49 IST" duration-ms="8322" status="PASS">
+        <test-method signature="EditFilter()[pri:5, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:43 IST" name="EditFilter" finished-at="2021-10-11T12:59:54 IST" duration-ms="10258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditFilter -->
-        <test-method signature="clearFilter()[pri:6, instance:com.defects.tests.FiltersTest@5c7933ad]" started-at="2021-10-11T11:38:49 IST" name="clearFilter" finished-at="2021-10-11T11:38:50 IST" duration-ms="1031" status="PASS">
+        <test-method signature="clearFilter()[pri:6, instance:com.defects.tests.FiltersTest@6c284af]" started-at="2021-10-11T12:59:54 IST" name="clearFilter" finished-at="2021-10-11T12:59:55 IST" duration-ms="1157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearFilter -->
       </class> <!-- com.defects.tests.FiltersTest -->
       <class name="com.defects.tests.CommentsTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.CommentsTest@38467116]" started-at="2021-10-11T11:34:24 IST" name="openDefect" finished-at="2021-10-11T11:34:45 IST" duration-ms="20098" status="PASS">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.CommentsTest@5b247367]" started-at="2021-10-11T12:53:00 IST" name="openDefect" finished-at="2021-10-11T12:53:21 IST" duration-ms="21048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="navigateToCommentsTab()[pri:1, instance:com.defects.tests.CommentsTest@38467116]" started-at="2021-10-11T11:34:45 IST" name="navigateToCommentsTab" finished-at="2021-10-11T11:35:17 IST" duration-ms="32522" status="PASS">
+        <test-method signature="navigateToCommentsTab()[pri:1, instance:com.defects.tests.CommentsTest@5b247367]" started-at="2021-10-11T12:53:21 IST" name="navigateToCommentsTab" finished-at="2021-10-11T12:53:54 IST" duration-ms="32629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToCommentsTab -->
-        <test-method signature="postComment()[pri:2, instance:com.defects.tests.CommentsTest@38467116]" started-at="2021-10-11T11:35:17 IST" name="postComment" finished-at="2021-10-11T11:35:20 IST" duration-ms="3012" status="PASS">
+        <test-method signature="postComment()[pri:2, instance:com.defects.tests.CommentsTest@5b247367]" started-at="2021-10-11T12:53:54 IST" name="postComment" finished-at="2021-10-11T12:53:57 IST" duration-ms="3324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postComment -->
-        <test-method signature="replyComment()[pri:3, instance:com.defects.tests.CommentsTest@38467116]" started-at="2021-10-11T11:35:20 IST" name="replyComment" finished-at="2021-10-11T11:35:23 IST" duration-ms="3141" status="PASS">
+        <test-method signature="replyComment()[pri:3, instance:com.defects.tests.CommentsTest@5b247367]" started-at="2021-10-11T12:53:57 IST" name="replyComment" finished-at="2021-10-11T12:54:00 IST" duration-ms="3315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- replyComment -->
       </class> <!-- com.defects.tests.CommentsTest -->
       <class name="com.defects.tests.PreviousVersionsTest">
-        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.PreviousVersionsTest@790da477]" started-at="2021-10-11T11:36:48 IST" name="openDefect" finished-at="2021-10-11T11:37:08 IST" duration-ms="20125" status="PASS">
+        <test-method is-config="true" signature="openDefect()[pri:0, instance:com.defects.tests.PreviousVersionsTest@7e057f43]" started-at="2021-10-11T12:57:47 IST" name="openDefect" finished-at="2021-10-11T12:58:06 IST" duration-ms="19151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDefect -->
-        <test-method signature="navigateToPreviousVersions()[pri:1, instance:com.defects.tests.PreviousVersionsTest@790da477]" started-at="2021-10-11T11:37:08 IST" name="navigateToPreviousVersions" finished-at="2021-10-11T11:37:41 IST" duration-ms="32723" status="PASS">
+        <test-method signature="navigateToPreviousVersions()[pri:1, instance:com.defects.tests.PreviousVersionsTest@7e057f43]" started-at="2021-10-11T12:58:06 IST" name="navigateToPreviousVersions" finished-at="2021-10-11T12:58:39 IST" duration-ms="32847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPreviousVersions -->
-        <test-method signature="invalidVersionDifference()[pri:2, instance:com.defects.tests.PreviousVersionsTest@790da477]" started-at="2021-10-11T11:37:41 IST" name="invalidVersionDifference" finished-at="2021-10-11T11:37:44 IST" duration-ms="2662" status="PASS">
+        <test-method signature="invalidVersionDifference()[pri:2, instance:com.defects.tests.PreviousVersionsTest@7e057f43]" started-at="2021-10-11T12:58:39 IST" name="invalidVersionDifference" finished-at="2021-10-11T12:58:42 IST" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidVersionDifference -->
-        <test-method signature="VersionDifference()[pri:3, instance:com.defects.tests.PreviousVersionsTest@790da477]" started-at="2021-10-11T11:37:44 IST" name="VersionDifference" finished-at="2021-10-11T11:38:03 IST" duration-ms="19440" status="PASS">
+        <test-method signature="VersionDifference()[pri:3, instance:com.defects.tests.PreviousVersionsTest@7e057f43]" started-at="2021-10-11T12:58:42 IST" name="VersionDifference" finished-at="2021-10-11T12:59:00 IST" duration-ms="18273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VersionDifference -->
       </class> <!-- com.defects.tests.PreviousVersionsTest -->
       <class name="com.defects.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.defects.tests.LoginTest@65f8f5ae]" started-at="2021-10-11T11:32:54 IST" name="setup" finished-at="2021-10-11T11:33:02 IST" duration-ms="7765" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.defects.tests.LoginTest@7ce69770]" started-at="2021-10-11T12:51:17 IST" name="setup" finished-at="2021-10-11T12:51:25 IST" duration-ms="7794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.defects.tests.LoginTest@65f8f5ae]" started-at="2021-10-11T11:33:02 IST" name="Login" finished-at="2021-10-11T11:33:11 IST" duration-ms="8442" status="PASS">
+        <test-method signature="Login()[pri:1, instance:com.defects.tests.LoginTest@7ce69770]" started-at="2021-10-11T12:51:25 IST" name="Login" finished-at="2021-10-11T12:51:34 IST" duration-ms="8436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="navigateToDefectsPage()[pri:2, instance:com.defects.tests.LoginTest@65f8f5ae]" started-at="2021-10-11T11:33:11 IST" name="navigateToDefectsPage" finished-at="2021-10-11T11:33:23 IST" duration-ms="12015" status="PASS">
+        <test-method signature="navigateToDefectsPage()[pri:2, instance:com.defects.tests.LoginTest@7ce69770]" started-at="2021-10-11T12:51:34 IST" name="navigateToDefectsPage" finished-at="2021-10-11T12:51:49 IST" duration-ms="15366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToDefectsPage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.defects.tests.LoginTest@65f8f5ae]" started-at="2021-10-11T11:39:02 IST" name="close" finished-at="2021-10-11T11:39:05 IST" duration-ms="3188" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.defects.tests.LoginTest@7ce69770]" started-at="2021-10-11T13:00:58 IST" name="close" finished-at="2021-10-11T13:00:59 IST" duration-ms="746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

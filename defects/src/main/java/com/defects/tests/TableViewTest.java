@@ -20,6 +20,8 @@ public class TableViewTest extends SuiteClass {
     
 	@Test(priority=1)
 	public void createInvalidTable() {
+		logger = report.createTest("TableView_Invalid_Create");
+		
 		elementClick("tableIcon");
 
 		// Store the current window handle
@@ -37,15 +39,19 @@ public class TableViewTest extends SuiteClass {
 		
 		elementClick("tableViewSave");
 		
+		takeScreenshot("TableViewInvalid");
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 		
 		driver.switchTo().window(winHandleBefore1);
 
+		reportPass("Invalid Table view test completed");
 	}
 	
 	@Test(priority=2)
 	public void createValidTable() {
+		logger = report.createTest("TableView_Invalid_Create");
+		
 		elementClick("tableIcon");
 
 		// Store the current window handle
@@ -80,18 +86,19 @@ public class TableViewTest extends SuiteClass {
 		elementClick("tableOptionAdd");
 		
         elementClick("tableOptionCheckBox");
-        
+
+        takeScreenshot("TableViewValid");
 		elementClick("tableViewSave");
 		
 
-		driver.switchTo().window(winHandleBefore1);		
+		driver.switchTo().window(winHandleBefore1);
 		
-		
-
+		reportPass("Table View Valid creation test completed");
 	}
 	
 	@Test(priority=3)
 	public void EditTable() {
+		logger = report.createTest("TableView_Edit");
 		
 		elementClick("tableIcon");
 
@@ -129,16 +136,15 @@ public class TableViewTest extends SuiteClass {
 		
         elementClick("tableViewDelete");
         
-		
+		takeScreenshot("TableViewEdit");
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 
 		tearDown();
 
 		driver.switchTo().window(winHandleBefore1);		
-		
-		
 
+		reportPass("Table view Edit test completed");
 	}
 	
 	
